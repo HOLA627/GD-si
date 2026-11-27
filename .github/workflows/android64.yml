@@ -1,5 +1,4 @@
-
-name: Android64 Build
+name: Android Build
 
 on:
   workflow_dispatch:
@@ -10,9 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Build Geode Mod
+      - uses: actions/checkout@v4
+
+      - name: Build Android64
         uses: geode-sdk/build-geode-mod@main
         with:
-          platform: Android64
+          target: Android64
