@@ -1,0 +1,11 @@
+{
+  "geode": "v6.0.0",
+  "gd": {
+    "android": "2.2091"
+  },
+  "id": "hola627.gdoptimizer",
+  "name": "GD Optimizer",
+  "version": "v0.1.0",
+  "developer": "HOLA627",
+  "description": "A lightweight performance-focused mod for Geometry Dash on Android."
+}
