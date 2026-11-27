@@ -1,1 +1,18 @@
 
+name: Android64 Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build Geode Mod
+        uses: geode-sdk/build-geode-mod@main
+        with:
+          platform: Android64
